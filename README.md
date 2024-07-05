@@ -1,16 +1,6 @@
 # Aprendizado em JavaScript
 
-Este repositório contém projetos e códigos que demonstrem meu aprendizado em JavaScript.
-
-## Projetos
-
-- **Projeto 1**: Descrição breve do projeto.
-  - Tecnologias utilizadas: JavaScript, HTML, CSS.
-  - Funcionalidades principais: [Listar funcionalidades principais aqui].
-
-- **Projeto 2**: Descrição breve do projeto.
-  - Tecnologias utilizadas: JavaScript, Node.js, Express.js, MongoDB.
-  - Funcionalidades principais: [Listar funcionalidades principais aqui].
+Este repositório contém projetos e códigos que demonstrem meu aprendizado em JavaScript.
 
 ## Conteúdo de Aprendizado
 
