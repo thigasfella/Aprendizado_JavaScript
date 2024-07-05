@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Sedan:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #303a3d;
+    --color-white: #fafafa;
+    --color-hover: rgb(255, 78, 65);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+input{
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--color-white);
+}
+.titulo{
+    color: var(--color-white);
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0 auto;
+}
+.botao_contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.botao_contador button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    transition: font-size 0.2s ease-in, background-color 0.5s ease;
+    margin: 0 auto;
+}
+button:hover{
+    font-size: 15px;
+    background-color: var(--color-hover);
+    color: var(--color-white);
+    margin: 0 auto;
+}

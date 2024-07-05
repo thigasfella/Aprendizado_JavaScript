@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main>
+        <div class="validadores">
+            <form method="post" id="formulario">
+                <h1 class="title">PREENCHA O FORMULÁRIO</h1>
+                <input type="text" id="nome" placeholder="Digite seu nome aqui!" required>
+                <input type="text" id="email" placeholder="Digite seu email aqui!" required>
+                <label for="email" id="labelEmail"></label>
+                <input type="password" id="senha" placeholder="Digite sua senha aqui!" required>
+                <label for="senha" id="labelSenha"></label>
+                <button type="submit">Cadastrar-se</button>
+            </form>
+        </div>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

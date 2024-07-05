@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Sedan:ital@0;1&display=swap');
+:root{
+    --color-black: #000;
+    --error-color: hsla(0, 100%, 63%, 0.527);
+    --confirm-color: rgba(40, 239, 40, 0.69);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-black);
+    padding: 10vh;
+
+}
+#nome,#email,#senha, button{
+    margin-top: 2vh;
+    padding: 10px;
+    border-radius: 5px;
+}
+button{
+    background-color: #ffa500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+button:hover{
+    background-color: #ffa60069;
+}
+.err{
+    border-color: var(--error-color)
+}
+.confirm{
+    border-color: var(--confirm-color)
+}
+.errLabel{
+    color: var(--error-color);
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="shortcut icon" href="img/jogo_da_velha.png" type="image/x-icon" / >
+</head>
+<body>
+    <div class="nomesPlayers">
+        <div class="container_vez">
+            <p class="vez">Vez de:</p><p id="jogadorDaVez" class="vez_name"></p>
+        </div>
+        <div class="playerx">
+            <input type="text" name="namePlayerx" id="namePlayerx" placeholder="Nome do player 'X'"></input>
+        <div id = "name01"><p class="jogadorX">JOGADOR:</p></div>
+        </div>
+        <div class="playero">
+         <input type="text" name="namePlayerx" id="namePlayero" placeholder="Nome do player 'O'"></input>
+         <div id="name02"><p class="jogadorO">JOGADOR:</p></div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="jogo">
+            <div class="linha">
+                <div class="casa" id="casa0"></div>
+                <div class="casa" id="casa1"></div>
+                <div class="casa" id="casa2"></div>
+            </div>
+    
+            <div class="linha">
+                <div class="casa" id="casa3"></div>
+                <div class="casa" id="casa4"></div>
+                <div class="casa" id="casa5"></div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa6"></div>
+                <div class="casa" id="casa7"></div>
+                <div class="casa" id="casa8"></div>
+            </div>
+        </div>
+        <button id="resetar" onclick="resetar()">RESETAR</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

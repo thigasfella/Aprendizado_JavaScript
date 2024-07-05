@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color: #212529;
+    --tb-color: #fff;
+    --btn-color: #19ff19;
+    --x-color: #f79621;
+    --o-color: #e36849;
+    --vez-cor: rgb(255, 233, 36);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jogo {
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid var(--tb-color);
+    margin-bottom: 20px; /* Espaço entre o tabuleiro e o botão */
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+}
+
+.casa {
+    width: 10rem;
+    height: 9.9rem;
+    border: 1px solid var(--tb-color);
+}
+
+#resetar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+    color: var(--tb-color);
+}
+.x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vh;
+    color: var(--x-color);
+}
+.o{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vh;
+    color: var(--o-color);
+}
+.nomesPlayers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px
+}
+
+.playerx,
+.playero {
+    margin-bottom: 50px;
+    margin-right: 190px;
+    border-bottom: 1px solid var(--tb-color);
+}
+
+.playerx input,
+.playero input {
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+#name01,
+#name02{
+    width: 218px;
+    height: 80px;
+    border: 1px solid var(--tb-color);
+    border-radius: 5px;
+    overflow:hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.jogadorX{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--x-color);
+    
+}
+.jogadorO{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--o-color);
+}
+.nomeX{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+    top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: var(--tb-color);
+    
+}
+.nomeO{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+    top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: var(--tb-color);
+    
+}
+.vezJogador{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+    top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: #19ff19;
+}
+.container_vez{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+    margin-right: 205px;
+
+}
+.vez{
+    top: 500px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--tb-color);
+}
+.vez_name{
+    top: 500px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--vez-cor);
+}
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 0.5; /* Permite que o contêiner cresça para ocupar o espaço disponível */
+        margin-top: 2px;
+    }
+
+    #jogo {
+        width: 18rem;
+        height: 18.3rem;
+        border: 2px solid var(--tb-color);
+        margin-bottom: 20px; /* Espaço entre o tabuleiro e o botão */
+    }
+
+    .linha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .casa {
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid var(--tb-color);
+    }
+
+    #resetar {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: var(--btn-color);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        color: var(--tb-color);
+    }
+
+    .nomesPlayers {
+        margin: 0 auto;
+    }
+
+    .playerx,
+    .playero {
+        margin-bottom: 10px;
+        margin-right:0;
+        border-bottom: 1px solid var(--tb-color);
+    }
+
+    .playerx input,
+    .playero input {
+        padding: 7px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 200px;
+    }
+
+    #name01,
+    #name02 {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--tb-color);
+        border-radius: 5px;
+        overflow: hidden;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .jogadorX,
+    .jogadorO,
+    .nomeX,
+    .nomeO,
+    .vezJogador {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+    .container_vez {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .vez {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        color: var(--tb-color);
+        font-size: 14px;
+    }
+
+    .vez_name {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: var(--vez-cor);
+        font-size: 14px;
+    }
+}
+
+/* Estilos Específicos para Dispositivos Médios */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    #jogo {
+        width: 18rem;
+        height: 18.3rem;
+        border: 2px solid var(--tb-color);
+        margin-bottom: 20px; /* Espaço entre o tabuleiro e o botão */
+    }
+
+    .linha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .casa {
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid var(--tb-color);
+    }
+
+    #resetar {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: var(--btn-color);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        color: var(--tb-color);
+    }
+
+    .nomesPlayers {
+        margin: 0 auto;
+    }
+
+    .playerx,
+    .playero {
+        margin-bottom: 10px;
+        margin-right:0;
+        border-bottom: 1px solid var(--tb-color);
+    }
+
+    .playerx input,
+    .playero input {
+        padding: 7px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 200px;
+    }
+
+    #name01,
+    #name02 {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--tb-color);
+        border-radius: 5px;
+        overflow: hidden;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .jogadorX,
+    .jogadorO,
+    .nomeX,
+    .nomeO,
+    .vezJogador {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+    .container_vez {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .vez {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        color: var(--tb-color);
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .vez_name {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: var(--vez-cor);
+        font-size: 14px;
+        margin: 0;
+    }
+}
